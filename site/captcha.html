@@ -178,10 +178,9 @@
 										<span>Валюта кошелька</span>
 									</div>
 									<div class="form__right">
-										<select class="select2 js-select-2">
-											<option value="рубли РФ">рубли РФ</option>
-											<option value="item-2">item-2</option>
-											<option value="item-3">item-3</option>
+										<select class="select2 js-select-2 is-currency">
+											<option data-url="/rb" value="rb">рубли РФ</option>
+											<option data-url="/gold" value="gold">золотые монеты</option>
 										</select>
 									</div> 
 								</div>
@@ -202,12 +201,12 @@
 								</div>
 								<div class="form__row">
 									<div class="form__right">
-										<div class="form__checbox">
+										<div class="form__checbox js-checkbox">
 											<label class="checkbox">
 												<input type="checkbox">
 												<span>Я согласен с условиями</span>
 											</label>
-											<a href="#" class="link">Оферты</a>
+											<a href="#" class="link">Оферты рублевого кошелька</a>
 										</div>
 										<button class="btn btn_long" type="submit">Добавить кошелек</button>
 									</div>

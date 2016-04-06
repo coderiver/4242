@@ -48,17 +48,35 @@ $(document).ready(function() {
 		);
 		return $state;
 	};
-	$('.js-select-2').select2(); 
-	$('.js-select-2.is-image')
-	.select2({
-		templateResult: formatState
-	})
+	$('.js-select-2').select2()
 	.on("change", function(e) {
 		var val 	= $(this).val();
 		setTimeout(function() {
 			$(this).find('option[value='+val+']').attr('selected');
-			// console.log($("select option:selected").html());
 		}, 1);
+	}); 
+	$('.js-select-2.is-image')
+	.select2({
+		templateResult: formatState
+	});
+	$('.js-select-2.is-currency').on('change', function () {
+		var this_ = $(this),
+			parent = this_.parents('form'),
+			checkbox = this_.parents('.js-checkbox'),
+			link = parent.find('.link'),
+			url = this_.find("option:selected").data('url'),
+			val = this_.val(),
+			rb = 'Оферты рублевого кошелька',
+			gold = 'Оферты золотого кошелька';
+
+		link.attr('href', url);
+		
+		if (val == 'rb') {
+			link.html(rb);
+		}
+		else {
+			link.html(gold);
+		}
 	});
 
 	// open menu

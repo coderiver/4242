@@ -122,11 +122,11 @@ $(document).ready(function() {
 				},
 				submitHandler: function(form) {
 					$('button[type="sybmit"], input[type="sybmit"]').prop('disabled', true);
-						setTimeout(function () {
-							$('button[type="sybmit"], input[type="sybmit"]').prop('disabled', false);
-							form.submit();
-						}, 1000);
-					}
+					setTimeout(function () {
+						$('button[type="sybmit"], input[type="sybmit"]').prop('disabled', false);
+						form.submit();
+					}, 1000);
+				}
 			});
 		});
 	};
