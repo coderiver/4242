@@ -33,17 +33,23 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon.is-red { color: #ff5722; }
 .icon.is-green { color: #8bc34a; }
 
-.icon-close:before { content: ""; }
+.icon-wallets .path1:before { content: ""; color: #64b5f6; }
+.icon-wallets .path2:before { content: ""; margin-left: -1em; color: #64b5f6; }
+.icon-wallets .path3:before { content: ""; margin-left: -1em; color: white; }
+.icon-wallets .path4:before { content: ""; margin-left: -1em; color: #64b5f6; }
+.icon-wallets .path5:before { content: ""; margin-left: -1em; color: #64b5f6; }
 
-.icon-int-bank:before { content: ""; }
+.icon-cards:before { content: ""; }
 
-.icon-cards:before { content: ""; }
+.icon-int-bank:before { content: ""; }
 
-.icon-operators:before { content: ""; }
+.icon-operators:before { content: ""; }
 
-.icon-terminals:before { content: ""; }
+.icon-terminals:before { content: ""; }
 
-.icon-translations:before { content: ""; }
+.icon-translations:before { content: ""; }
+
+.icon-close:before { content: ""; }
 
 .icon-reg:before { content: ""; }
 
