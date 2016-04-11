@@ -33,11 +33,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon.is-red { color: #ff5722; }
 .icon.is-green { color: #8bc34a; }
 
-.icon-wallets .path1:before { content: ""; color: #64b5f6; }
-.icon-wallets .path2:before { content: ""; margin-left: -1em; color: #64b5f6; }
-.icon-wallets .path3:before { content: ""; margin-left: -1em; color: white; }
-.icon-wallets .path4:before { content: ""; margin-left: -1em; color: #64b5f6; }
-.icon-wallets .path5:before { content: ""; margin-left: -1em; color: #64b5f6; }
+.icon-wallets:before { content: ""; }
 
 .icon-cards:before { content: ""; }
 
